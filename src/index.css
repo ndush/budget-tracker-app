@@ -1,13 +1,66 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Press Start 2p", cursive;
+  background: #A40FF6;
+  background: linear-gradient(
+    90deg,
+    #A40FF6,
+    #A40FF6
+  );
+}
+p{
+  color: #faf9fb;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#07000c
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1em;
+}
+
+button {
+  font-family: "Press Start 2p", cursive;
+  font-size: 1rem;
+  border: 3px solid black;
+  padding: 0.5rem 1rem;
+  background-color: rgba(252, 124, 124, 0.75);
+  box-shadow: inset -3px -3px 0 0 rgb(252, 124, 124);
+  transition: all 0.1s ease-in;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: 700px;
+  height: 500px;
+  min-height: 500px;
+  background: white;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
