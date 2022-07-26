@@ -2,9 +2,11 @@ import React from "react"
 
 function Header(){
     return(
-        <h2>
+        <div className ="alert alert-primary">
+        <h2 >
             Expense Tracker
         </h2>
+        </div>
     )
 }
 export default Header
