@@ -14,15 +14,15 @@ body {
   );
 }
 p{
-  color: #faf9fb;
+  color: #A40FF6;
 }
 
 .text {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 30%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  color:#07000c
+  color:white
 }
 
 

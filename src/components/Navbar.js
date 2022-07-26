@@ -10,10 +10,6 @@ export default function Navbar(){
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/about">About</Link>
-                    </li>
-                    
-                    <li className="nav-item">
                         <Link className="nav-link" to="/reviews">Reviews</Link>
                     </li>
                     <li className="nav-item">
@@ -21,6 +17,12 @@ export default function Navbar(){
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/budget">Budget</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/remaining">Remaining</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/expenses"> ExpenseTotal</Link>
                     </li>
                 </ul>
             </div>
