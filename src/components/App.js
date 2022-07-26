@@ -13,10 +13,10 @@ import  ExpenseTotal from "./ ExpenseTotal"
 function App() {
   return (
     <Router>
-      <div>
+      <div className='container'>
         <Navbar/>
       </div>
-
+      <div className='row mt-3'>
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
         <Route exact path="/reviews" element={<Reviews/>}></Route>
@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/expenses" element={<ExpenseTotal/>}></Route>
         
       </Routes>
-
+</div>
     </Router>
    
   )
