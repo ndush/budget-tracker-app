@@ -23,6 +23,12 @@ body {
   min-height: 30vh;
   margin: 0;
 }
+
+.contain {
+  margin: 30px auto;
+  width: 200px;
+}
+
 p{
   color: #A40FF6;
 }
@@ -36,16 +42,71 @@ p{
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 1em;
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-button {
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #ba2ecc;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+/* button {
   font-family: "Press Start 2p", cursive;
   font-size: 1rem;
   border: 3px solid black;
@@ -55,9 +116,9 @@ button {
   transition: all 0.1s ease-in;
   margin: 1rem;
   cursor: pointer;
-}
+} */
 
-main {
+/* main {
   margin: 4rem auto;
   max-width: 700px;
   height: 500px;
@@ -73,4 +134,4 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
-}
+} */
