@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: "Press Start 2p", cursive;
   background: #A40FF6;
   background: linear-gradient(
@@ -14,7 +14,7 @@ body {
     #A40FF6
   );
  
-}
+} */
 .transaction-body{
   display: flex;
   flex-direction: column;
