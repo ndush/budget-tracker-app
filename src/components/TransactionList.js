@@ -1,18 +1,25 @@
-import React, { useContext, useEffect, useState } from "react";
-import { GlobalContext } from '../context/GlobalState';
-import  Transaction  from './Transaction';
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
+import Transaction from "./Transaction";
 
-function TransactionList(){
-    const { transactions } = useContext(GlobalContext);
-    
-    return(
-        <div className ="alert alert-secondary">
-    <h3>History</h3>
+function TransactionList({ transactionList, setTransactionList} ) {
+  const { transactions } = useContext(GlobalContext);
+
+  return (
+    <div class="d-flex justify-content-end">
+      <h3>History</h3>
       <ul className="list">
-        {transactionList.map(transaction => (<Transaction key={transaction.id} transaction={transaction} />))}
+        {transactionList.map((transaction) => (
+          <Transaction
+            key={transaction.id}
+            transaction={transaction}
+            transactionList={transactionList}
+            id={transaction.id}
+            setTransactionList={setTransactionList}
+          />
+        ))}
       </ul>
-   
-        </div>
-    )
+    </div>
+  );
 }
-export default TransactionList
+export default TransactionList;

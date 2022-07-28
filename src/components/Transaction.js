@@ -1,10 +1,21 @@
-import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import React from "react";
+//import { GlobalContext } from "../context/GlobalState";
 
-function Transaction({ transaction }) {
-  const { deleteTransaction } = useContext(GlobalContext);
+function Transaction({ transaction,transactionList,setTransactionList,id}) {
+  //const { deleteTransaction } = useContext(GlobalContext);
 
   const sign = transaction.amount < 0 ? "-" : "+";
+
+  function handleDelete(){
+    fetch(`https://fast-wave-83090.herokuapp.com/budget/${id}`,{
+      method: "DELETE",
+    })
+    .then(res => res.json())
+    .then(()=>{
+    const filteredTransactions=transactionList.filter((item)=>item.id !==id)
+    setTransactionList(filteredTransactions)
+    })
+  }
   return (
     <li className={transaction.amount < 0 ? "minus" : "plus"}>
       {Object.values(transaction)[0]}{" "}
@@ -12,7 +23,7 @@ function Transaction({ transaction }) {
         {sign}${Math.abs(transaction.amount)}
       </span>
       <button
-        onClick={() => deleteTransaction(transaction.id)}
+        onClick={handleDelete}
         className="delete-btn"
       >
         x

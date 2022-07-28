@@ -16,7 +16,7 @@ function IncomeExpenses() {
   ).toFixed(2);
 
   return (
-    <div className="inc-exp">
+    <div className="d-flex justify-content-center">
       <div>
         <h4>Income</h4>
         <p className="money plus">{income}</p>

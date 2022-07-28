@@ -1,9 +1,9 @@
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* body {
   font-family: "Press Start 2p", cursive;
@@ -15,19 +15,19 @@
   );
  
 } */
-.transaction-body{
+/* .transaction-body{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 30vh;
   margin: 0;
-}
+} */
 
-.contain {
+/* .contain {
   margin: 30px auto;
   width: 270px;
-}
+} */
 
 p{
   color: #A40FF6;

@@ -1,11 +1,12 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
 
-function AddTransaction() {
+function AddTransaction({onAddTransaction}) {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
 
   const { addTransaction } = useContext(GlobalContext);
+
   const onSubmit = e => {
     e.preventDefault();
     const transactionObject = {
@@ -24,7 +25,6 @@ function AddTransaction() {
       .then((res) => res.json())
       .then((data) => onAddTransaction(data))
 
-
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
       text,
@@ -34,7 +34,7 @@ function AddTransaction() {
     addTransaction(newTransaction);
   }
   return (
-    <div >
+    <div className="d-flex justify-content-center">
        <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
