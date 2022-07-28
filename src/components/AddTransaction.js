@@ -8,6 +8,22 @@ function AddTransaction() {
   const { addTransaction } = useContext(GlobalContext);
   const onSubmit = e => {
     e.preventDefault();
+    const transactionObject = {
+      
+      income: text,
+      amount: amount
+    };
+   
+    fetch("https://fast-wave-83090.herokuapp.com/budget", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(transactionObject)
+    })
+      .then((res) => res.json())
+      .then((data) => onAddTransaction(data))
+
 
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
