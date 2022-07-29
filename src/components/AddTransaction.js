@@ -1,55 +1,72 @@
-import React, {useState, useContext} from 'react'
-import { GlobalContext } from '../context/GlobalState';
+import React, { useState, useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 
-function AddTransaction({onAddTransaction}) {
-  const [text, setText] = useState('');
+function AddTransaction({ onAddTransaction }) {
+  const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
   const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     const transactionObject = {
-      
-      income: text,
-      amount: amount
+      text: text,
+      amount: amount,
     };
-   
+
     fetch("https://fast-wave-83090.herokuapp.com/budget", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(transactionObject)
+      body: JSON.stringify(transactionObject),
     })
       .then((res) => res.json())
-      .then((data) => onAddTransaction(data))
+      .then((data) => onAddTransaction(data));
 
     const newTransaction = {
       id: Math.floor(Math.random() * 100000000),
       text,
-      amount: +amount
-    }
+      amount: +amount,
+    };
 
     addTransaction(newTransaction);
-  }
+  };
   return (
-    <div className="d-flex justify-content-center">
-       <h3>Add new transaction</h3>
-      <form onSubmit={onSubmit}>
-        <div className="form-control">
-          <label htmlFor="text">Text</label>
-          <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text..." />
+    <div
+      className="container h-100"
+      style={{ position: "absolute", top: 25, left: 10 + "px",color:"purple" }}
+    >
+      <div className="row h-100 justify-content-center align-items-center">
+        <div className="  col-lg-4">
+          <h3 style={{color:"white"}}>Add new transaction</h3>
+          <form onSubmit={onSubmit}>
+            <div className="form-control">
+              <label htmlFor="text">Category</label>
+              <input
+                type="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                placeholder="Enter category..."
+              />
+            </div>
+            <div className="form-control">
+              <label htmlFor="amount">
+                Amount <br />
+                (negative - expense, positive - income)
+              </label>
+              <input
+                type="number"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                placeholder="Enter amount..."
+              />
+            </div>
+            <button className="btn btn-light">Add transaction</button>
+        
+          </form>
         </div>
-        <div className="form-control">
-          <label htmlFor="amount"
-            >Amount <br />
-            (negative - expense, positive - income)</label
-          >
-          <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
-        </div>
-        <button className="btn">Add transaction</button>
-      </form>
+      </div>
     </div>
   );
 }

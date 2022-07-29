@@ -7,6 +7,7 @@ import AddTransaction from "./components/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
 
 function Budget() {
+  
   const [transactionList, setTransactionList] = useState([]);
   useEffect(() => {
     fetch("https://fast-wave-83090.herokuapp.com/budget")
@@ -18,8 +19,8 @@ function Budget() {
     setTransactionList([...transactionList, data]);
   }
   return (
-    <GlobalProvider>
-      <div className="transaction-body">
+    <GlobalProvider >
+   <div className="budgetColor">
         <Header />
         <div className="contain">
           <Balance />
@@ -30,7 +31,8 @@ function Budget() {
           />
           <AddTransaction onAddTransaction={handleAddTransaction} />
         </div>
-      </div>
+        </div>
+    
     </GlobalProvider>
   );
 }

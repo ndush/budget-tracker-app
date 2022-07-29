@@ -1,13 +1,17 @@
-import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import React from "react";
+
 import Transaction from "./Transaction";
 
-function TransactionList({ transactionList, setTransactionList} ) {
-  const { transactions } = useContext(GlobalContext);
+function TransactionList({ transactionList, setTransactionList }) {
+
 
   return (
-    <div class="d-flex justify-content-end">
-      <h3>History</h3>
+    <div className=" card inEx"  style={{width: 20+"rem",marginRight:50+"px", left:10+"px"}} >
+
+     
+        <h3>History</h3>
+     
+
       <ul className="list">
         {transactionList.map((transaction) => (
           <Transaction

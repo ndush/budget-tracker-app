@@ -5,6 +5,11 @@ function Transaction({ transaction,transactionList,setTransactionList,id}) {
   //const { deleteTransaction } = useContext(GlobalContext);
 
   const sign = transaction.amount < 0 ? "-" : "+";
+ 
+  // function minusTotal(amount) {
+  //   total-=amount
+  // }
+
 
   function handleDelete(){
     fetch(`https://fast-wave-83090.herokuapp.com/budget/${id}`,{
@@ -14,6 +19,8 @@ function Transaction({ transaction,transactionList,setTransactionList,id}) {
     .then(()=>{
     const filteredTransactions=transactionList.filter((item)=>item.id !==id)
     setTransactionList(filteredTransactions)
+
+
     })
   }
   return (
@@ -23,7 +30,7 @@ function Transaction({ transaction,transactionList,setTransactionList,id}) {
         {sign}${Math.abs(transaction.amount)}
       </span>
       <button
-        onClick={handleDelete}
+        onClick={handleDelete }
         className="delete-btn"
       >
         x

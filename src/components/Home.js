@@ -4,7 +4,7 @@ import background from "../images/background.png";
 function Home() {
   return (
     <div
-      class="container-fluid"
+      className="container-fluid"
       style={{
         backgroundColor: "purple",
       }}

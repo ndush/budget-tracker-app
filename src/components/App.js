@@ -9,7 +9,7 @@ import Budget from "../Budget";
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div >
         <Navbar />
       </div>
       <div className="row mt-3">
