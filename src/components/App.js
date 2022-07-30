@@ -8,8 +8,7 @@ import Budget from "../Budget";
 
 function App() {
   return (
-    <Router basename="budget-tracker-app
-    ">
+    <Router basename>
       <div >
         <Navbar />
       </div>

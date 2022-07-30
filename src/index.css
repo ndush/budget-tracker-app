@@ -11,7 +11,9 @@ p{
   color:white
 }
 
-
+.budgetColor{
+  background-color: #A40FF6;
+}
 h1 {
   letter-spacing: 1px;
   margin: 0;
