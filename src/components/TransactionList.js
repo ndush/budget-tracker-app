@@ -1,13 +1,13 @@
-import React from "react";
-
+import React, { useContext }  from "react";
+import { GlobalContext } from "../context/GlobalState";
 import Transaction from "./Transaction";
 
 function TransactionList({ transactionList, setTransactionList }) {
-
+  const { transactions} = useContext(GlobalContext);
 
   return (
-    <div className=" card inEx"  style={{width: 20+"rem",marginRight:50+"px", left:10+"px"}} >
-
+   <div className="  card3  card"  style={{width: 15+"rem", color:"blue"}} >
+   
      
         <h3>History</h3>
      

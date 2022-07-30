@@ -3,17 +3,45 @@ p{
   color: #A40FF6;
 }
 
-.text {
+/* .text {
   position: absolute;
   top: 30%;
   left: 60%;
   transform: translate(-50%, -50%);
   color:white
+} */
+.card-columns{
+ 
+  display:flex;
+  justify-content: space-around;
+  padding: 3vw;
 }
-
+.add-transaction{
+  margin-left: 10vw;
+}
 .budgetColor{
   background-color: #A40FF6;
+  height: 100%;
 }
+/* .card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+    margin:0;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+} */
+/* .card3{
+  float:right;
+  margin-top: -30%;
+  margin-left: -75%;
+} */
+/* .container h-100{
+  
+  position: absolute;
+  top: -20px;
+} */
 h1 {
   letter-spacing: 1px;
   margin: 0;

@@ -34,14 +34,12 @@ function AddTransaction({ onAddTransaction }) {
   };
   return (
     <div
-      className="container h-100"
-      style={{ position: "absolute", top: 25, left: 10 + "px",color:"purple" }}
-    >
-      <div className="row h-100 justify-content-center align-items-center">
-        <div className="  col-lg-4">
+      >
+      <div >
+        <div className="  col-lg-8" >
           <h3 style={{color:"white"}}>Add new transaction</h3>
           <form onSubmit={onSubmit}>
-            <div className="form-control">
+            <div className="form-control" style={{marginBottom:2+"vh"}}>
               <label htmlFor="text">Category</label>
               <input
                 type="text"
@@ -50,7 +48,7 @@ function AddTransaction({ onAddTransaction }) {
                 placeholder="Enter category..."
               />
             </div>
-            <div className="form-control">
+            <div className="form-control" style={{marginBottom:2+"vh"}}>
               <label htmlFor="amount">
                 Amount <br />
                 (negative - expense, positive - income)

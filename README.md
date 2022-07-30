@@ -8,9 +8,9 @@ Its coded using ReactJs, Bootstrap CSS and HTML
 ## Setup
 To run the application, run npm start
 
- The base URL for your API 
+ The base URL for the API 
 
-
+https://fast-wave-83090.herokuapp.com/budget
 ## Deliverables
 
 A user can:

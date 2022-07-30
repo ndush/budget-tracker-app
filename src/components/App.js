@@ -8,7 +8,7 @@ import Budget from "../Budget";
 
 function App() {
   return (
-    <Router basename>
+    <Router >
       <div >
         <Navbar />
       </div>

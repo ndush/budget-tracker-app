@@ -12,7 +12,7 @@ function Budget() {
   useEffect(() => {
     fetch("https://fast-wave-83090.herokuapp.com/budget")
       .then((res) => res.json())
-      .then((data) => setTransactionList(data));
+      .then((transactionList) => setTransactionList(transactionList))
   }, []);
 
   function handleAddTransaction(data) {
@@ -20,20 +20,24 @@ function Budget() {
   }
   return (
     <GlobalProvider >
-   <div className="budgetColor">
+   <div className="budgetColor ">
         <Header />
-        <div className="contain">
-          <Balance />
+        <div className="card-columns">
+          <div><Balance />
           <IncomeExpenses />
+          </div>
+          <div className="add-transaction">  
+            <AddTransaction onAddTransaction={handleAddTransaction} />
+          </div>
+        
           <TransactionList
             transactionList={transactionList}
             setTransactionList={setTransactionList}
           />
-          <AddTransaction onAddTransaction={handleAddTransaction} />
         </div>
         </div>
     
-    </GlobalProvider>
+     </GlobalProvider>
   );
 }
 export default Budget;
