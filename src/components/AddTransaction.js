@@ -42,13 +42,14 @@ function AddTransaction({ onAddTransaction }) {
             <div className="form-control" style={{marginBottom:2+"vh", height:20+"vh"}}>
               <label htmlFor="text">Category</label>
               <input
+
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Enter category..."
               />
             </div>
-            <div className="form-control" style={{marginBottom:2+"vh",height:20+"vh",paddingBottom:10+"vh"}}>
+            <div className="form-control" style={{marginBottom:2+"vh",height:20+"vh",paddingBottom:20+"vh"}}>
               <label htmlFor="amount">
                 Amount <br />
                 (negative - expense, positive - income)
@@ -60,7 +61,7 @@ function AddTransaction({ onAddTransaction }) {
                 placeholder="Enter amount..."
               />
             </div>
-            <button className="btn btn-light">Add transaction</button>
+            <button className="btn btn-light" style={{width:20+"vw"}}>Add transaction</button>
         
           </form>
         </div>
