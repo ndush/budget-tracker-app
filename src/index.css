@@ -21,7 +21,7 @@ p{
 }
 .budgetColor{
   background-color: #A40FF6;
-  height: 100%;
+  min-height: 100vh;
 }
 /* .card-columns {
   @include media-breakpoint-only(lg) {

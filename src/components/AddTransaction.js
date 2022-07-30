@@ -39,7 +39,7 @@ function AddTransaction({ onAddTransaction }) {
         <div className="  col-lg-8" >
           <h3 style={{color:"white"}}>Add new transaction</h3>
           <form onSubmit={onSubmit}>
-            <div className="form-control" style={{marginBottom:2+"vh"}}>
+            <div className="form-control" style={{marginBottom:2+"vh", height:20+"vh"}}>
               <label htmlFor="text">Category</label>
               <input
                 type="text"
@@ -48,7 +48,7 @@ function AddTransaction({ onAddTransaction }) {
                 placeholder="Enter category..."
               />
             </div>
-            <div className="form-control" style={{marginBottom:2+"vh"}}>
+            <div className="form-control" style={{marginBottom:2+"vh",height:20+"vh",paddingBottom:10+"vh"}}>
               <label htmlFor="amount">
                 Amount <br />
                 (negative - expense, positive - income)

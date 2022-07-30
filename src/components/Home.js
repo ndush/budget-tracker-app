@@ -4,10 +4,10 @@ import background from "../images/background.png";
 function Home() {
   return (
     <div
-      className="container-fluid"
-      style={{
-        backgroundColor: "purple",
-      }}
+      // className="container-fluid"
+      // style={{
+      //   backgroundColor: "purple",
+      // }}
     >
       <img src={background} class="img-fluid" alt="fireSpot" />
       <div className="text">
