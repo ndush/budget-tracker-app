@@ -61,7 +61,7 @@ function AddTransaction({ onAddTransaction }) {
                 placeholder="Enter amount..."
               />
             </div>
-            <button className="btn btn-light" style={{width:25+"vw"}}>Add transaction</button>
+            <button className="btn btn-secondary" style={{width:25+"vw"}}>Add transaction</button>
         
           </form>
         </div>
