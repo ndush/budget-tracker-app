@@ -11,11 +11,10 @@ To run the application, run npm start
  https://fast-wave-83090.herokuapp.com/budget/
 
 ## Features
-A user can:
-1.Add expenses which have a name and a cost
-2.Remove expenses
-3.View how much of their budget is remaining
-4.View how much they've spent so far
+A user can: 
+1.Add expenses which have a name and a cost 
+2.Remove expenses 
+3.View the item they have been spending on
 
 # Getting Started with Budget Tracker (with REACT)
 
