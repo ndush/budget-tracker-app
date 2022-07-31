@@ -1,7 +1,7 @@
 
-p{
+.style{
   color: #A40FF6;
-  font-size:large;
+  font-size:1.5em;
 }
 
 .card-columns{
@@ -51,7 +51,7 @@ h4 {
   margin-top: 10vh;
 }
 .home{
-  height: 90vh;
+  height: 110vh;
   background-image: url("../public/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;  
