@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import Transaction from "./Transaction";
 
 function TransactionList({ transactionList, setTransactionList }) {
-  const { transactions} = useContext(GlobalContext);
+  //const { transactionList} = useContext(GlobalContext);
 
   return (
    <div className="  card3  card"  style={{width: 25+"vw", color:"blue"}} >
