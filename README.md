@@ -14,7 +14,7 @@ To run the application, run npm start
 A user can: 
 1.Add expenses which have a name and a cost 
 2.Remove expenses 
-3.View the item they have been spending on
+3.View the items they have been spending on
 
 # Getting Started with Budget Tracker (with REACT)
 
