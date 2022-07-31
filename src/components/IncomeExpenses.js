@@ -18,7 +18,7 @@ function IncomeExpenses() {
   return (
    
 
-    <div className="card "style={{ width: 20 + "vw" }}>
+    <div className="card "style={{ width: 25 + "vw" }}>
       <div className="card-body">
         <h5 className="card-title" style={{ color: "blue" }}>
           Income

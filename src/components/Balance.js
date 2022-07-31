@@ -7,7 +7,7 @@ function Balance(){
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
     return(
 
-<div className="card " style={{width: 20+"vw",  color:"blue" ,marginBottom:2+"vh"}}>
+<div className="card " style={{width: 25+"vw",  color:"blue" ,marginBottom:2+"vh"}}>
 <div className="card-body">
   <h5 className="card-title">Balance</h5>
   <h1 className="card-subtitle mb-2 text-muted">${total}</h1>

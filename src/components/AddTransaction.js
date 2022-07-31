@@ -36,7 +36,7 @@ function AddTransaction({ onAddTransaction }) {
     <div
       >
       <div >
-        <div className="  col-lg-8" >
+        <div className="  newTransaction" >
           <h3 style={{color:"white"}}>Add new transaction</h3>
           <form onSubmit={onSubmit}>
             <div className="form-control" style={{marginBottom:2+"vh", height:20+"vh"}}>
@@ -61,7 +61,7 @@ function AddTransaction({ onAddTransaction }) {
                 placeholder="Enter amount..."
               />
             </div>
-            <button className="btn btn-light" style={{width:20+"vw"}}>Add transaction</button>
+            <button className="btn btn-light" style={{width:25+"vw"}}>Add transaction</button>
         
           </form>
         </div>

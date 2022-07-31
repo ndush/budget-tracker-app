@@ -1,6 +1,7 @@
 
 p{
   color: #A40FF6;
+  font-size:large;
 }
 
 .card-columns{
@@ -10,7 +11,8 @@ p{
   padding: 3vw;
 }
 .add-transaction{
-  margin-left: 10vw;
+  margin-left: 5vw;
+  
 }
 .budgetColor{
   background-color: #A40FF6;
@@ -35,11 +37,11 @@ h4 {
 .nav-bar{
  color:"blue"
 }
-.col-lg-8{
+.newTransaction{
   width: 25vw;
-  margin-right: 60px;
+  margin-right: 5vw;
 }
-.col-lg-8 input{
+.newTransaction input{
   width: 20vw;
 }
 .text{
@@ -56,24 +58,24 @@ h4 {
 }
 @media only screen and (max-width: 750px) {
  
-  .col-lg-8{
+  .newTransaction{
     width: 25vw;
     margin-right: 60px;
   }
-  .col-lg-8 input{
+  .newTransaction input{
     width: 20vw;
   }
 }
 @media only screen and (max-width: 500px) {
   
-  .col-lg-8{
+  .newTransaction{
     width: 25vw;
     margin-right: 60px;
   }
-  .col-lg-8 input{
+  .newTransaction input{
     width: 20vw;
   }
-  .col-lg-8 button{
+  .newTransaction button{
   font-size: 10px;
   }
 

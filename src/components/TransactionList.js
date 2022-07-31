@@ -6,7 +6,7 @@ function TransactionList({ transactionList, setTransactionList }) {
   const { transactions} = useContext(GlobalContext);
 
   return (
-   <div className="  card3  card"  style={{width: 15+"rem", color:"blue"}} >
+   <div className="  card3  card"  style={{width: 25+"vw", color:"blue"}} >
    
      
         <h3>History</h3>
