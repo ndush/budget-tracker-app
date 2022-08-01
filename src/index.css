@@ -34,9 +34,7 @@ h4 {
   margin: 0;
   text-transform: uppercase;
 }
-.nav-bar{
- color:"blue"
-}
+
 .newTransaction{
   width: 25vw;
   margin-right: 5vw;
@@ -52,6 +50,7 @@ h4 {
 }
 .home{
   height: 95vh;
+  width: 100vw;
   background-image: url("../public/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;  

@@ -13,12 +13,7 @@ function Home() {
             See what areas of your day-to-day life are consuming
             the most of your resources
         </p>
-        <div className='text-center p-3' style={{ backgroundColor: 'purple', marginTop:65+"vh"}}>
-        © 2022 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-              Damaris
-        </a>
-      </div>
+        
         </div>
         
     </div>
