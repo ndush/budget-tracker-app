@@ -33,23 +33,32 @@ function AddTransaction({ onAddTransaction }) {
     addTransaction(newTransaction);
   };
   return (
-    <div
-      >
-      <div >
-        <div className="  newTransaction" >
-          <h3 style={{color:"white"}}>Add new transaction</h3>
+    <div>
+      <div>
+        <div className="  newTransaction">
+          <h3 style={{ color: "white" }}>Add new transaction</h3>
           <form onSubmit={onSubmit}>
-            <div className="form-control" style={{marginBottom:2+"vh", height:20+"vh"}}>
+            <div
+              className="form-control"
+              style={{ marginBottom: 2 + "vh", height: 20 + "vh" }}
+            >
               <label htmlFor="text">Category</label>
               <input
-
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Enter category..."
+                required
               />
             </div>
-            <div className="form-control" style={{marginBottom:2+"vh",height:20+"vh",paddingBottom:20+"vh"}}>
+            <div
+              className="form-control"
+              style={{
+                marginBottom: 2 + "vh",
+                height: 20 + "vh",
+                paddingBottom: 20 + "vh",
+              }}
+            >
               <label htmlFor="amount">
                 Amount <br />
                 (negative - expense, positive - income)
@@ -59,10 +68,12 @@ function AddTransaction({ onAddTransaction }) {
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 placeholder="Enter amount..."
+                required
               />
             </div>
-            <button className="btn btn-secondary" style={{width:25+"vw"}}>Add transaction</button>
-        
+            <button className="btn btn-secondary" style={{ width: 25 + "vw" }}>
+              Add transaction
+            </button>
           </form>
         </div>
       </div>

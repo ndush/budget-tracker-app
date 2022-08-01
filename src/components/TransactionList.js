@@ -2,7 +2,7 @@ import React, { useContext }  from "react";
 import { GlobalContext } from "../context/GlobalState";
 import Transaction from "./Transaction";
 
-function TransactionList({ transactionList, setTransactionList }) {
+function TransactionList({ transactionList, setTransactionList}) {
   //const { transactionList} = useContext(GlobalContext);
 
   return (
@@ -20,6 +20,7 @@ function TransactionList({ transactionList, setTransactionList }) {
             transactionList={transactionList}
             id={transaction.id}
             setTransactionList={setTransactionList}
+          
           />
         ))}
       </ul>
