@@ -20,13 +20,13 @@ function IncomeExpenses() {
 
     <div className="card "style={{ width: 25 + "vw" }}>
       <div className="card-body">
-        <h5 className="card-title" style={{ color: "blue" }}>
+        <h5 className="card-title" style={{ color: "purple" }}>
           Income
         </h5>
         <h1 className="card-subtitle mb-2 text-muted">${income}</h1>
       </div>
       <div className="card-body">
-        <h5 className="card-title" style={{ color: "blue" }}>
+        <h5 className="card-title" style={{ color: "purple" }}>
           Expense
         </h5>
         <h1 className="card-subtitle mb-2 text-muted">${expense}</h1>

@@ -11,7 +11,11 @@ function Header() {
           color: "blue",
         }}
       >
-        <h2>Expense Tracker</h2>
+      
+        <h2>
+          <span style={{ fontweight: "bold", color: "#FA731F" }}>Expense</span>
+          <span style={{ fontweight: "bold", color: "#FA731F" }}>Tracker</span>
+        </h2>
         <img
           src={process.env.PUBLIC_URL + "/images/c.png"}
           style={{

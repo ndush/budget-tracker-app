@@ -7,12 +7,12 @@ export default function Navbar() {
       <div className="container-fluid">
         <ul className="navbar-nav" >
           <li className="nav-item" >
-            <Link className="nav-link" to="/" style={{color:"blue"}}>
+            <Link className="nav-link" to="/" style={{color:"purple"}}>
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/budget" style={{color:"blue"}}>
+            <Link className="nav-link" to="/budget" style={{color:"purple"}}>
               Budget
             </Link>
           </li>
